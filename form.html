@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+          <img src="header.jpg" alt="Header Image">
+          <div class="header-text">
+            <h1 align="center">Google Form For Job Application</h1>
+            <p align="center">Please fill out the form below to apply for a position with our company.</p>
+          </div>
+      
+
+      
+    </header>
+
+    <form action="submit.php" method="post" enctype="multipart/form-data" align="center" class="box">
+
+        <label for="name">Name:       </label>
+        <input type="text" id="name" name="name"required >
+        <br><br>
+        <label for="Number">Phone Number:</label>
+        <input type="tel" id="Number" name="Number" placeholder="01XXXXXXXXX" pattern="01[0-9]{3}[0-9]{6}" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="City">Select Your City:</label>
+        <br><br>
+        <select id="City" name="City" required>
+            <option value="">Select City</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Khulna">Khulna</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Others">Others</option>
+        </select>
+        <br><br>
+<div class="question">
+    <label class="question-title">Which Position are you interested in?</label>
+
+    <label class="radio-item">
+        <input type="radio" name="Position" value="Software Engineer" required>
+        Software Engineer
+    </label>
+
+    <label class="radio-item">
+        <input type="radio" name="Position" value="Data Analyst">
+        Data Analyst
+    </label>
+
+    <label class="radio-item">
+        <input type="radio" name="Position" value="Project Manager">
+        Project Manager
+    </label>
+</div>
+        <br>
+        <label for="Experience">Years of Experience:</label>
+        <input type="number" id="Experience" name="Experience" min="0" max="5" required>
+        <br><br>
+        <label for ="Resume">Upload Your Resume:</label>
+        <input type="file" id="Resume" name="Resume" accept=".pdf,.doc,.docx" required>
+        <br><br>
+        <input type="Reset" value="Reset">
+        <input type="submit" value="Submit"> 
+        <form action="submit.php" method="post" enctype="multipart/form-data"></form><!-- <a href =submit.php></a> -->
+
+    </form>
+</body>
+</html>

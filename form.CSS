@@ -1,0 +1,99 @@
+body{
+     background-color: #fbe9f3;
+    margin: 50px;
+    font-family: Arial, sans-serif;
+}
+label{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}
+header{
+    position: relative;
+    width: 100%;
+}
+header img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.header-text h1{
+    color:black;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.header-text p{
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.box{
+    background-image: url(https://th.bing.com/th/id/R.e17c74c19bab2dbe88691d064a23212e?rik=R86lfIPRTr%2f1AQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fc%2fc%2f9%2f720218-amazing-google-wallpaper-backgrounds-1920x1080.jpg&ehk=3%2fh2bWs07859cGF6%2bivWtGiBZV3a1NIjgWE%2bjmMZIN8%3d&risl=&pid=ImgRaw&r=0);
+
+    background-size: cover;
+    background-position: center;
+
+    width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+
+    border-radius: 15px;
+
+  
+    background-color: rgba(255,255,255,0.85);
+    background-blend-mode: lighten;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    text-align: left;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.question{
+    margin-bottom: 20px;
+}
+
+.question-title{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 8px;
+}
+
+.radio-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #202124;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.radio-item input{
+    accent-color: #673ab7; /* Google Forms purple */
+    width: 16px;
+    height: 16px;
+}
